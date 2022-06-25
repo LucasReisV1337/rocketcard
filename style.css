@@ -1,0 +1,196 @@
+:root {
+  --bg: hsl(0, 0%, 0%);
+  --bg-card: hsl(216, 26%, 7%);
+  --text: hsl(0, 0%, 95%);
+  --img-profile: hsl(258, 73%, 62%);
+  --buttons: hsl(0, 0%, 100%);
+  --border-button: hsl(0, 0%, 10%);
+
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Prompt', sans-serif;
+}
+
+body {
+  background-color: var(--bg-card);
+  color: var(--text);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 14.6rem;
+
+  margin: 6rem 0 0 0;
+
+  text-align: center;
+}
+
+.left-content p {
+  font-size: 2rem;
+  line-height: 3rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.card {
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-card);
+  width: 44rem;
+  height: 65rem;
+  padding: 4.2rem;
+  border: 2.4rem solid var(--bg);
+  border-radius: 5rem;
+}
+
+.card .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 3.2rem;
+}
+
+.card .header a {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-decoration: none;
+  color: var(--text);
+
+  margin: 0;
+
+  cursor: pointer;
+
+  transition: 300ms;
+}
+
+.card .header a:hover {
+  opacity: 0.7;
+}
+
+.card .header .image-border {
+  border: 1px solid var(--text);
+  border-radius: 5rem;
+
+  width: 4.8rem;
+  height: 4.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .image-border img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.card .main {
+  position: relative;
+
+  margin: 4rem 0;
+}
+
+.card .stats {
+  background-color: var(--bg);
+  position: relative;
+  right: 30px;
+  max-width: 23rem;
+  width: 100%;
+  padding: 2rem 3.2rem;
+  border-radius: 5rem;
+}
+
+.card .stats p {
+  margin: 0;
+
+  display: block;
+
+  font-size: 1.6rem;
+}
+
+.stat {
+  display: flex;
+  gap: 3rem;
+}
+
+.card img.user-image {
+  display: flex;
+  width: 20vw;
+  border-radius: 50%;
+  position: relative;
+  bottom: 3rem;
+
+  transform: translateX(4.2rem);
+}
+
+.card .footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  left: 40px;
+  bottom: 70px;
+}
+
+.card .footer p {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.card .footer img {
+  width: 2.8rem;
+  height: 3.6rem;
+}
+
+.right-content p {
+  font-size: 2rem;
+  line-height: 3rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.right-content button {
+  width: 23rem;
+  height: 6rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text);
+
+  border: 1px solid var(--border-button);
+  border-radius: 1.6rem;
+
+  background-color: var(--bg);
+
+  cursor: pointer;
+
+  transition: 300ms;
+}
+
+.right-content button:hover {
+  opacity: 0.7;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
